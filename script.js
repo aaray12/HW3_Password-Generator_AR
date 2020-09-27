@@ -84,13 +84,13 @@ function writePassword() {
     var passwordText = document.querySelector("#password");
     passwordText.value = password;
   }
-  // issue alert asking user to input valid data
+  // issue alert asking user to input valid data.
   else {
     alert("please enter a value between 8 and 128");
     }
     
 }
-// Add event listener to generate button
+// Add event listener to generate button.
 generateBtn.addEventListener("click", writePassword);
 
 
