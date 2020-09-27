@@ -13,6 +13,10 @@ function writePassword() {
       userCapital = confirm("Do you want uppercase letters in your password?");
       userNumber = confirm("Do you want numbers in your password?");
       userSpecial = confirm("Do you want special characters in your password?");
+      if (userLetter === false && userCapital === false && userNumber === false && userSpecial === false){
+        alert("Atleast one type of character must be selected");
+      }
+      else{
       // create a function to get a random character.
       function getRandomCharacter(){
         // create functions to generate random letters. capital letters, numbers, and special characters.
@@ -54,7 +58,7 @@ function writePassword() {
         if (userNumber === true){
           character.push(getRandomNumber());
         }
-        if (userLetter === true){
+        if (userSpecial === true){
           character.push(getRandomSpecial());
         }
         // create a variable that stores the random character. 
@@ -74,6 +78,7 @@ function writePassword() {
       var finalPassword = randomPassword.join("");
       // return the final password.
       return finalPassword;
+    }
     }
     var password = generatePassword();
     var passwordText = document.querySelector("#password");
