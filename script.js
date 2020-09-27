@@ -40,12 +40,6 @@ function writePassword() {
           var randomSpecial = special[Math.floor(Math.random() * special.length)];
         return randomSpecial;
         }
-        // run the functions.
-        getRandomLetter();
-        getCapitalLetter();
-        getRandomNumber();
-        getRandomSpecial();
-
         // create an array to store user character preferences. 
         var character =[];
         // use if logic to push user character preferences into the array.
