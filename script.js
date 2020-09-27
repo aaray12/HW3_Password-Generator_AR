@@ -63,8 +63,6 @@ function writePassword() {
       var randomPassword = [];
         // use a for-loop to get the amount of random characters the user chose.
         for(i=0; i < length; i++){
-          //run the random character function to get a random character.
-          getRandomCharacter();
           //push the character to the array.
           randomPassword.push(getRandomCharacter());
         }
